@@ -1,0 +1,11 @@
+.controller {
+    display: flex;
+}
+h3 {
+    text-transform: uppercase;
+}
+
+.container {
+    width: 600px;
+    padding: 40px;
+}

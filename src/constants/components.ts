@@ -1,0 +1,9 @@
+export const HAIR = 'hair';
+export const EARS = 'ears';
+export const NECK = 'neck';
+export const NOSE = 'nose';
+export const EYES = 'eyes';
+export const MOUTH = 'mouth';
+export const LEG = 'leg';
+export const ACCESSORIES = 'accessories';
+export const BACKGROUND = 'background';

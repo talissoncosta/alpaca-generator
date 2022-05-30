@@ -35,12 +35,12 @@ export const STAR = 'star';
 export const ASTONISHED = 'astonished';
 export const EATING = 'eating';
 export const LAUGH = 'laugh';
-export const TONGE = 'tonge';
+export const TONGUE = 'tongue';
 
 // NECK
 export const BENDBACKWARD = 'bend-backward';
 export const BENDFORWARD = 'bend-forward';
-export const THICK = 'tick';
+export const THICK = 'thick';
 
 // leg
 export const BUBBLETEA = 'bubble-tea';

@@ -4,20 +4,3 @@
   padding: 40px;
   background-color: #eeecee;
 }
-.header {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  height: 40px;
-  text-transform: uppercase;
-  vertical-align: middle;
-  padding-top: 20px;
-  padding-left: 40px;
-}
-.generator {
-  grid-column-start: 1;
-  grid-row-start: 3;
-  grid-row-end: 5;
-  padding: 40px;
-}

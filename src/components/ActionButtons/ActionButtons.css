@@ -1,27 +1,7 @@
-.base-position {
-  position: absolute;
-  left: 100px;
-}
-
-.generator {
-  grid-column-start: 1;
-  grid-row-start: 3;
-  grid-row-end: 5;
-  padding: 40px;
-  width: 600px;
-  display: flex;
-  flex-direction: column;
-}
-
-.screen {
-  flex-grow: 1;
-  height: 500px;
-}
-
 .buttonsContainer {
   display: flex;
   width: 95%;
-  margin-left:10px;
+  margin-left: 10px;
 }
 
 .actionButton {

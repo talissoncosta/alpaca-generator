@@ -1,6 +1,10 @@
-import React, { useContext } from "react";
+import React, { RefObject, useContext, useRef } from "react";
 import { OptionsContext } from "../../contexts/optionsContext";
+import { ActionButtons } from "..";
 import "./Generator.css";
+
+const wSize = 550;
+const hSize = 500;
 
 function Generator() {
   const { state } = useContext(OptionsContext);
@@ -13,6 +17,7 @@ function Generator() {
   const eyes = require(`../../images/eyes/${state.eyes}.png`);
   const ears = require(`../../images/ears/${state.ears}.png`);
   const accessories = require(`../../images/accessories/${state.accessories}.png`);
+  const exportRef = useRef<HTMLDivElement>();
   const images = [
     { name: "background", src: background },
     { name: "neck", src: neck },
@@ -26,17 +31,19 @@ function Generator() {
   ];
   return (
     <div className="generator">
-      <div className="screen">
+      <div ref={exportRef as RefObject<HTMLDivElement>} className="screen">
         {images.map(({ src, name }) => (
           <img
             className="base-position"
+            key={src}
             src={src}
             alt={name}
-            height={600}
-            width={600}
+            height={hSize}
+            width={wSize}
           />
         ))}
       </div>
+      <ActionButtons imgRef={exportRef}/>
     </div>
   );
 }

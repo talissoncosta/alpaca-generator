@@ -25,7 +25,8 @@ function Controlls() {
         <ButtonGroup
           // @ts-expect-error Typescript complains about the key, but It is guarantee that the key is gonna be a valid string
           buttons={styles[state.component]}
-          selected={state.style}
+          // @ts-expect-error Typescript complains about the key, but It is guarantee that the key is gonna be a valid string
+          selected={state[state.component]}
           setSelected={dispatch}
           type={state.component}
         />
